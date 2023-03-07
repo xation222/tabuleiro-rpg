@@ -1,0 +1,17 @@
+@charset "UTF-8";
+button {
+    width: 80;
+    height: 40;
+}
+.result {
+    border: 1px solid black;
+    width: 78;
+    height: 80;
+    text-align: center;
+    font-size: 4.2em;
+}
+#dados {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1.5fr 1fr;
+}

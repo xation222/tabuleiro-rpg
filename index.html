@@ -4,8 +4,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabuleiro</title>
+    <link rel="stylesheet" href="style.css" media="all">
 </head>
 <body>
-    
+    <h1>Dadinho</h1>
+    <p>Tem dado em casa?</p>
+    <section id="dados">
+        <article>
+            <div class="result" id="rd4"></div>
+            <button id="4" onclick="dado(id)">D4</button>
+        </article>
+        <article>
+            <div class="result" id="rd6"></div>
+            <button id="6" onclick="dado(id)">D6</button>
+        </article>
+        <article>
+            <div class="result" id="rd10"></div>
+            <button id="10" onclick="dado(id)">D10</button>
+        </article>
+        <article>
+            <div class="result" id="rd20"></div>
+            <button id="20" onclick="dado(id)">D20</button>
+        </article>
+        <article>
+            <div class="result" id="rd100"></div>
+            <button id="100" onclick="dado(id)">D100</button>
+        </article>
+    </section>
+    <script>
+        function dado(e) {
+            console.log(rd6.innerText)
+            switch (Number(e)) {
+                case 4:
+                    rd4.innerText = Math.floor(Math.random() * 4) + 1;
+                    break;
+                case 6:
+                    rd6.innerText = Math.floor(Math.random() * 6) + 1;
+                    break;
+                case 10:
+                    rd10.innerText = Math.floor(Math.random() * 10) + 1;
+                    break;
+                case 20:
+                    rd20.innerText = Math.floor(Math.random() * 20) + 1;
+                    break;
+                case 100:
+                    rd100.innerText = Math.floor(Math.random() * 100) + 1;
+                    break;
+            }
+        }
+    </script>
 </body>
 </html>
